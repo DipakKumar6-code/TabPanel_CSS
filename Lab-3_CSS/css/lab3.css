@@ -1,0 +1,69 @@
+/* Setting charset and importing Google Fonts */
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Box-sizing reset (https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/) */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* Setting default font family to Open Sans */
+html {
+	font-family: "Open Sans", sans-serif;
+}
+
+/* Styling container */
+#container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Styling tabs */
+.tabs {
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+/* Styling tabs list */
+.tabs ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Styling individual tabs */
+.tabs ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+/* Styling tab links */
+.tabs ul li a {
+	text-decoration: none;
+	padding: 5px 10px;
+	background-color: #f2f2f2;
+	color: #333;
+	border: 1px solid #ccc;
+	border-radius: 5px 5px 0 0;
+}
+
+/* Styling hover state of tab links */
+.tabs ul li a:hover {
+	background-color: #e0e0e0;
+}
+
+/* Styling tab panels */
+.tabs div[role="tabpanel"] {
+	display: none;
+	padding: 10px;
+}
+
+/* Styling active tab panel */
+.tabs div[role="tabpanel"].active {
+	display: block;
+	border-top: 1px solid #ccc;
+}
